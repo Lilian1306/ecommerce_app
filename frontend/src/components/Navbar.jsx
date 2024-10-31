@@ -58,9 +58,10 @@ export default function Navbar() {
                 <img src={assets.dropdown_icon} classNamealt='h-4 rotate-100' alt=''/>
                   <p>Back</p>
               </div>
-              <NavLink to='/'>
-                    Home
-              </NavLink>
+              <NavLink onClick={()=>setVisible(false)} className='py-2 pl-6 border' to='/'>HOME</NavLink>
+              <NavLink onClick={()=>setVisible(false)} className='py-2 pl-6 border' to='/collection'>COLLECTION</NavLink>
+              <NavLink onClick={()=>setVisible(false)} className='py-2 pl-6 border' to='/about'>ABOUT</NavLink>
+              <NavLink onClick={()=>setVisible(false)} className='py-2 pl-6 border' to='/contact'>CONTACT</NavLink>
             </div>
          </div>
       
