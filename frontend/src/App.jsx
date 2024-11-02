@@ -10,6 +10,7 @@ import Login from './pages/Login'
 import PlaceOrder from './pages/PlaceOrder'
 import Order from './pages/Orders'
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 
 export default function App() {
@@ -27,6 +28,7 @@ export default function App() {
         <Route path="/place-order" element={<PlaceOrder/>}/>
         <Route path="/order" element={<Order/>}/>
        </Routes>
+       <Footer/>
     </div>
   )
 }
