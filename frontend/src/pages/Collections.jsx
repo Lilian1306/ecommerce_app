@@ -34,6 +34,9 @@ function Collections() {
     if(category.length > 0){
       productsCopy = productsCopy.filter(item => category.includes(item.category))
     }
+    if(subCategory.length > 0) {
+      productsCopy = productsCopy.filter(item => subCategory.includes(item.subCategory))
+    }
 
     setFilterProducts(productsCopy)
   }
@@ -77,7 +80,7 @@ function Collections() {
             <input className='w-3' type='checkbox' value={'Topwear'} onChange={toggleSubCategory}/> Topwear
           </p>
           <p className='flex gap-2'>
-            <input className='w-3' type='checkbox' value={'Bottowear'} onChange={toggleSubCategory}/> Bottowear
+            <input className='w-3' type='checkbox' value={'Bottomwear'} onChange={toggleSubCategory}/> Bottomwear
           </p>
           <p className='flex gap-2'>
             <input className='w-3' type='checkbox' value={'Winterwear'} onChange={toggleSubCategory}/> Winterwear
