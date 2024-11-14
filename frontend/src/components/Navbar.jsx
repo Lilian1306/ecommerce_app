@@ -1,16 +1,17 @@
 import { useContext, useState } from 'react'
 import {assets} from '../assets/assets'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useLocation} from 'react-router-dom'
 import { ShopContext } from '../context/ShopContext';
 
 export default function Navbar() {
 
   const [visible, setVisible] = useState(false);
-  const {setShowSearch} = useContext(ShopContext)
+  const {setShowSearch} = useContext(ShopContext);
+  const location = useLocation();
 
   return (
     <div className="flex items-center justify-between py-5 font-medium">
-       <Link to='/'> <img src={assets.logo} className='w-[249px] text-center' alt="" /> </Link> 
+       <Link to='/'> <img src={assets.isabel} className='w-[249px] text-center' alt="" /> </Link> 
 
         <ul className='hidden sm:flex gap-5 text-sm text-gray-700'>
             <NavLink to='/' className='flex flex-col items-center gap-1'>
@@ -35,8 +36,15 @@ export default function Navbar() {
          </ul>
 
          <div className='flex items-center gap-6'>
-          <img onClick={()=>setShowSearch(true)} src={assets.search_icon} className='w-5 cursor-pointer' alt=''/>
-         </div>
+        {location.pathname === '/collection' && (
+          <img
+            onClick={() => setShowSearch(true)}
+            src={assets.search_icon}
+            className='w-5 cursor-pointer'
+            alt=''
+          />
+        )}
+      </div>
 
          {/** Sidebar menu for small screens */}
          <div className={`absolute top-0 bottom-0 overflow-hidden bg-white transition-all ${visible ? 'w-full' : 'w-0'}`}>
