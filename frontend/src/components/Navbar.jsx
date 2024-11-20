@@ -44,6 +44,17 @@ export default function Navbar() {
             alt=''
           />
         )}
+
+<button
+          className="sm:hidden"
+          onClick={() => setVisible((prev) => !prev)}
+        >
+          <img
+            src={assets.dropdown_icon}
+            className="w-6 cursor-pointer"
+            alt="Menu"
+          />
+        </button>
       </div>
 
          {/** Sidebar menu for small screens */}
