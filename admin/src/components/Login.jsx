@@ -6,6 +6,7 @@ import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 
 export default function Login({setToken}) {
+  console.log(`${backendUrl}/api/user/admin`, "backendURL")
     
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -15,6 +16,8 @@ export default function Login({setToken}) {
         try {
             e.preventDefault();
             const response = await axios.post(`${backendUrl}/api/user/admin`, { email, password });
+            console.log(backendUrl)
+            
             if(response.data.success){
                 setToken(response.data.token)
             }else {
