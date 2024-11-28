@@ -85,7 +85,7 @@ export default function Add({token}) {
 
       <div className='w-full'>
         <p className='mb-2'>Nombre del producto</p>
-        <input onChange={(e)=>setName(e.target.value)} value={name} className='w-full mx-w-[500ox] px-3 py-2 ' type='text' placeholder='escribe aquí' required/>
+        <input onChange={(e)=>setName(e.target.value)} value={name} className='w-full mx-w-[500ox] px-3 py-2 ' type='text' placeholder='Escribe aquí' required/>
       </div>
 
       <div className='w-full'>
@@ -148,7 +148,7 @@ export default function Add({token}) {
 
       <div className='flex gap-2 mt-2'>
         <input onChange={() => setBestseller(prev => !prev)} checked={bestseller} type='checkbox' id='bestseller'/>
-        <label className='cursor-pointer' htmlFor='bestseller'>AAñadir a los más vendidos</label>
+        <label className='cursor-pointer' htmlFor='bestseller'>Añadir a los más vendidos</label>
       </div>
 
       <button type='submit' className='w-28 py-3 mt-4 text-white bg-black '> Agregar </button>
