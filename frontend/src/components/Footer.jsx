@@ -13,15 +13,15 @@ export default function Footer() {
         </p>
       </div>
       <div>
-        <p className='text-xl font-medium mb-5'>COMPANY</p>
+        <p className='text-xl font-medium mb-5'>Nuestra empresa</p>
         <ul className='flex flex-col gap-1 text-gray-600'>
-         <Link to='/collection' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}> <li>Collection</li> </Link> 
-           <Link to='/about' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}> <li>About us</li> </Link>
+         <Link to='/collection' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}> <li>Colección</li> </Link> 
+           <Link to='/about' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}> <li>Sobre Nosotros</li> </Link>
         </ul>
       </div>
       
       <div>
-        <p className='text-xl font-medium mb-5'>GET IN TOUCH</p>
+        <p className='text-xl font-medium mb-5'>Contáctanos</p>
         <ul className='flex flex-col gap-1 text-gray-600'>
           <li>+502 7777-7777</li>
           <li>contact@isabel.com</li>
