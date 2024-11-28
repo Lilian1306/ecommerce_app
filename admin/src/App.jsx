@@ -12,7 +12,7 @@ export const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
 console.log(backendUrl)
 
-export const currency = `$`
+export const currency = `Q`
 
 export default function App() {
 
