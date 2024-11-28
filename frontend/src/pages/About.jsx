@@ -13,7 +13,7 @@ export default function About() {
          <div className='flex flex-col justify-center gap-6 md:w-2/4 text-gray-600'>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-            <b className='text-gray-800'>Our Mission</b>
+            <b className='text-gray-800'>Nuestra Misión</b>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
          </div>
       </div>
