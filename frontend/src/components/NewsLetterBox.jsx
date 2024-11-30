@@ -1,6 +1,6 @@
 
 
-export default function NewsLetterBox() {
+/*export default function NewsLetterBox() {
 
     const onSubmitHandler = () => {
         ever.preventDefault()
@@ -15,4 +15,4 @@ export default function NewsLetterBox() {
       </form>
     </div>
   )
-}
+}*/

@@ -25,7 +25,7 @@ export default function Add({token}) {
       try {
         const formData = new FormData()
 
-        formData.append( "name", name)
+        formData.append("name", name)
         formData.append("description", description)
         formData.append("price", price)
         formData.append("category", category)
@@ -98,8 +98,8 @@ export default function Add({token}) {
           <p className='mb-2'>Categoría del producto</p>
           <select onChange={(e)=>setCategory(e.target.value)} className='w-full px-3 py-2'>
              <option value='Men'>Caballeros</option>
-             <option value='Woman'>Damas</option>
-             <option value='kids'>Niños</option>
+             <option value='Women'>Damas</option>
+             <option value='Kids'>Niños</option>
           </select>
         </div>
 
@@ -109,12 +109,24 @@ export default function Add({token}) {
              <option value='Topwear'>Topwear</option>
              <option value='Bottomwear'>Bottomwear</option>
              <option value='Winterwear'>Winterwear</option>
+             <option value='Calzado'>Calzado</option>
           </select>
         </div>
 
         <div>
           <p className='mb-2'>Precio del producto</p>
-          <input onChange={(e)=>setPrice(e.target.value)} value={price} className='w-full px-3 py-2 sm:w-[120px]' type='Number' placeholder='25'/>
+          <input onChange={(e) => { 
+            const value = e.target.value;
+            if (value === '' || Number(value) >= 0) {
+            setPrice(value);
+            
+          }
+         }}
+          value={price}
+          className='w-full px-3 py-2 sm:w-[120px]'
+          type='number'
+          placeholder='25'
+         />
         </div>
 
       </div>

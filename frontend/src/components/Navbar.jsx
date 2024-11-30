@@ -45,7 +45,7 @@ export default function Navbar() {
           />
         )}
 
-<button
+       <button
           className="sm:hidden"
           onClick={() => setVisible((prev) => !prev)}
         >

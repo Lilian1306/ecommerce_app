@@ -61,6 +61,7 @@ import hero from './hero.jpg'
 import cart_icon from './cart_icon.png'
 import bin_icon from './bin_icon.png'
 import dropdown_icon from './dropdown_icon.png'
+import drop_up from './drop_up.png'
 import exchange_icon from './exchange_icon.png'
 import profile_icon from './profile_icon.png'
 import quality_icon from './quality_icon.png'
@@ -81,6 +82,7 @@ export const assets = {
     hero,
     cart_icon,
     dropdown_icon,
+    drop_up,
     exchange_icon,
     profile_icon,
     quality_icon,
@@ -704,7 +706,7 @@ export const products = [
         price: 320,
         image: [p_img51],
         category: "Women",
-        subCategory: "Winterwear",
+        subCategory: "Calzado",
         sizes: ["S", "M", "L", "XL"],
         date: 1716667345448,
         bestseller: false
@@ -716,7 +718,7 @@ export const products = [
         price: 350,
         image: [p_img52],
         category: "Men",
-        subCategory: "Winterwear",
+        subCategory: "Calzado",
         sizes: ["S", "M", "L", "XL"],
         date: 1716668445448,
         bestseller: false
