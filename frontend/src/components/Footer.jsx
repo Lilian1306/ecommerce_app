@@ -18,6 +18,7 @@ export default function Footer() {
          <Link to='/collection' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}> <li>Colección</li> </Link> 
            <Link to='/about' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}> <li>Sobre Nosotros</li> </Link>
         </ul>
+        
       </div>
       
       <div>

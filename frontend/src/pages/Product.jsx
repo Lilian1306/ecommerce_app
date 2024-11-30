@@ -12,6 +12,7 @@ export default function Product() {
   const [ productData, setProductData] = useState(false)
   const [ image, setImage ] = useState('')
   const [ size, setSize ] =useState('')
+  const [isZoomed, setIsZoomed] = useState(false);
 
   const fetchProductData = async () => {
      products.map((item) => {
