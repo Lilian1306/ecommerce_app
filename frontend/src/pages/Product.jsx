@@ -12,7 +12,8 @@ export default function Product() {
   const [ productData, setProductData] = useState(false)
   const [ image, setImage ] = useState('')
   const [ size, setSize ] =useState('')
-  const [isZoomed, setIsZoomed] = useState(false);
+  const [ isZoomed, setIsZoomed] = useState(false);
+  const [ transform, setTransform] = useState('center');
 
   const fetchProductData = async () => {
      products.map((item) => {
@@ -22,7 +23,6 @@ export default function Product() {
         console.log(item)
         return null; 
       }
-
      })
   }
 
@@ -44,9 +44,31 @@ export default function Product() {
             ))
            }
          </div>
-         <div className='w-full sm:w-[80%]'>
-           <img className='w-full h-auto' src={image} alt=''/>
-         </div>
+
+     <div
+      className="w-full sm:w-[80%] overflow-hidden"
+      onMouseMove={(e) => {
+        if (!isZoomed) return;
+
+        const rect = e.currentTarget.getBoundingClientRect();
+        const x = ((e.clientX - rect.left) / rect.width) * 100; 
+        const y = ((e.clientY - rect.top) / rect.height) * 100; 
+
+        setTransform(`${x}% ${y}%`); 
+      }}
+      onClick={() => setIsZoomed(!isZoomed)} 
+    >
+      <img
+        src={image}
+        alt=""
+        className={`w-full h-auto transition-transform duration-300 ${
+          isZoomed ? 'scale-150 cursor-move' : 'scale-100 cursor-pointer'
+        }`}
+        style={{
+          transformOrigin: transform
+        }}
+      />
+    </div>
         </div>
 
         {/**  PRODUCTS INFORMATION  */}
