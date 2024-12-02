@@ -30,6 +30,11 @@ export default function Context() {
            alt="Instagram" 
            className="w-12 h-12 cursor-pointer"
            onClick={() => handleRedirect('https://www.instagram.com/isabelcomalapa/')} />
+         <img 
+           src={assets.tiktok} 
+           alt="TikTok" 
+           className="w-12 h-12 cursor-pointer"
+           onClick={() => handleRedirect('https://www.tiktok.com/@isabelsanjuancoma')} />
        </div>
     </div>
        </div>

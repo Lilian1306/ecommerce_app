@@ -77,6 +77,7 @@ import stripe_logo from './stripe_logo.png'
 import cross_icon from './cross_icon.png'
 import facebook from './facebook.svg'
 import instagram from './instagram.svg'
+import tiktok from './tiktok.svg'
 
 export const assets = {
     isabel,
@@ -100,7 +101,8 @@ export const assets = {
     stripe_logo,
     cross_icon,
     facebook,
-    instagram
+    instagram,
+    tiktok
 }
 
 export const products = [
