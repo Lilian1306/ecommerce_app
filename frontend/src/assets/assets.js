@@ -56,7 +56,8 @@ import p_img52 from './p_img52.png'
 
 
 import isabel from './isabel.jpg'
-//import hero_img from './hero_img.png'
+import hero_img from './hero_img.png'
+import logo from './logo.png'
 import hero from './hero.jpg'
 import cart_icon from './cart_icon.png'
 import bin_icon from './bin_icon.png'
@@ -81,7 +82,8 @@ import tiktok from './tiktok.svg'
 
 export const assets = {
     isabel,
-   // hero_img,
+    logo,
+    hero_img,
     hero,
     cart_icon,
     dropdown_icon,
