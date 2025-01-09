@@ -17,7 +17,7 @@ export default function LatestCollection() {
     <div className="my-10">
       <div className="text-center py-8 text-3xl">
        <Title text1={'Última'}  text2={'Colección'}/>
-       <p className="w-3/4 m-auto text-xs sm:text-sm md:text-base text-gray-600 ">Bienvenida a ℛ𝑜𝓅𝒶 𝒞𝒶𝓈𝓊𝒶𝓁 ℐ𝓈𝒶𝒷𝑒𝓁</p>
+       <p className="w-3/4 m-auto text-xs sm:text-sm md:text-base text-gray-600 ">Bienvenida a </p>
       </div>
       
       {/**Rendering Products */}
